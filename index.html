@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local Browser Storage Editor</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Local Browser Storage Editor</h1>
+    <div class="toolbar">
+      <input type="text" id="search" placeholder="Live search keys/values..." spellcheck="false">
+      <button id="save-btn" class="btn">Save</button>
+      <button id="refresh-btn" class="btn">Refresh</button>
+      <button id="export-btn" class="btn">Export</button>
+      <label class="btn" for="import-file">Import</label>
+      <input type="file" id="import-file" accept=".json,application/json">
+    </div>
+  </header>
+  <main>
+    <section class="panel">
+      <div class="meta">
+        <span id="count"></span>
+        <span id="status"></span>
+      </div>
+      <div id="table-container" class="table-container"></div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
